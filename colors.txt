@@ -1,0 +1,3 @@
+#00EDFF - sky blue
+#324B4E - dark grey
+#E6F4F1 - light grey
