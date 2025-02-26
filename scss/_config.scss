@@ -1,0 +1,51 @@
+@use 'sass:math';
+@use 'functions_mixins' as fm;
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", serif;
+    // font-family: "Parkinsans", serif;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+// Colors
+$primary: #FF570A;
+$background: #1C2021;
+$text: #CCCCCC;
+$sub: #555C5E;
+
+body{
+    background-color: $background;
+    color: $text;
+}
+
+a,a:active,a:visited{
+    color: $text;
+}
+
+$breakpoints: ( //0.9375
+    "sm": 576,
+    "md": 768,
+    "lg": 992,
+    "xl": 1200,
+    "xxl": 1400
+);
+
+.container{
+    margin: 0 auto;
+    padding: fm.calcRem(30) fm.calcRem(10);
+}
+
+@each $key,$val in $breakpoints{
+    @media (min-width: #{$val}px){
+        .container{
+            max-width: #{$val * 0.9375}px;
+        }
+    }
+}

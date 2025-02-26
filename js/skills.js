@@ -128,7 +128,7 @@ const loadSkills = (divID,skillset) => {
         const figure = document.createElement("figure");
         figure.setAttribute("id",skillset+"-"+index);
         const img = document.createElement("img");
-        img.setAttribute("src","./assets/images/svg/skills/"+skill.svg+".svg");
+        img.setAttribute("src","./assets/skills/"+skill.svg+".svg");
         img.setAttribute("alt",skill.title);
         const figcaption = document.createElement("figcaption");
         figcaption.appendChild(document.createTextNode(skill.title));

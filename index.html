@@ -1,253 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Omar P Graham">
-    <meta name="description" content="">
-    <title>Portfolio - Omar P Graham</title>
-    <link rel="stylesheet" href="./plugins/bootstrap-5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./plugins/fontawesome-6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <title>Portfolio: Omar P. Graham</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta name="author" content="Omar P. Graham" />
+  
+  <link rel="icon" href="./assets/logo.svg">
+  
+  <meta property="og:title" content="Portfolio: Omar P. Graham" />
+  <meta property="og:description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="Portfolio: Omar P. Graham" />
+  <meta name="twitter:description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta name="twitter:image" content="" />
+  
+  <link rel="canonical" href="https://www.mywebsite.com/page">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-xl">
-              <a class="navbar-brand" href="#">OPG</a>
-              <div class="theme-icon"><img src="./assets/images/svg/sun.svg" alt="theme icon"></div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="main-menu">
-                <ul class="navbar-nav text-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
+  <header>
+    <a href="./"><img src="./assets/logo.svg" alt="Logo"></a>
+    <nav>
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About Me</a></li>
+            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon">
+      <i class=''></i>
+      <!-- <i class='bx bxs-x-circle'></i> -->
+    </div>
+  </header>
+
+  <main>
+    <!-- Introduction -->
+    <section id="home-section" class="home-section">
+      <div class="container">
+        <div class="overview">
+          <h5>Good Day,</h5>
+          <h1>I am <span>Omar P Graham</span></h1>
+          <h3>Anti-Money Laundering Analyst</h3>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/omar-p-graham" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.github.com/omar-p-graham" target="_blank"><i class='bx bxl-github' ></i></a>
+          </div>
+        </div>
+        <div class="identity">
+          <picture>
+            <source media="(min-width:992px)" srcset="./assets/body.webp" alt="Body Image">
+            <img src="./assets/face.webp" alt="Face Image">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-section" class="about-section">
+      <div class="container">
+        <h2 class="section-heading"><i class='bx bxs-id-card' ></i> About Me</h2>
+        <div id="about-details">
+          <div id="about-details-personal">
+            <h5>Personal Details</h5>
+            <div class="detail"><a href="mailto:omar_p_graham@outlook.com"><span>Email:</span> omar_p_graham@outlook.com</a></div>
+            <div class="detail"><p><span>Languages:</span> English</p></div>
+            <div class="detail"><p><span>Location:</span> New York, USA</p></div>
+          </div>
+          <div id="about-details-summary">
+            <h5>Personal Summary</h5>
+            <p>Developer/Analyst who uses critical thinking, computer science, mathematical analysis, and engineering to aid in research, designing, development, implementation, and testing of software that will increase process flow and productivity.</p>
+          </div>
+        </div>
+        <div id="about-services">
+          <h3 class="section-sub-heading">What I Do</h3>
+          <div class="services">
+            <div class="service">
+              <i class='bx bx-code-alt' ></i>
+              <h5>Web Development</h5>
+              <p>Create and maintain websites and web applications. Design layouts, ensuring functionality, and optimize performance to provide a seamless user experience. Collaborate with designers, content creators, and other stakeholders to bring visually appealing, user friendly, and responsive websites/web applications to life.</p>
+            </div>
+            <div class="service">
+              <i class='bx bx-line-chart' ></i>
+              <h5>Data Analytics</h5>
+              <p>Collects, clean, processes, and perform statistical analyses on large datasets to identify trends, patterns, and insights. Help to make informed decisions by providing data-driven insights that can improve strategies, optimize operations, and identify opportunities for growth.</p>
+            </div>
+            <div class="service">
+              <i class='bx bx-money-withdraw' ></i>
+              <h5>Anti-Money Laundering Analysis</h5>
+              <p>Detect and prevent financial crimes, such as money laundering and terrorist financing; by analyzing financial transactions, monitor suspicious activities, and ensure compliance with regulatory requirements. Use various data analysis, risk assessment, and investigative tools and techniques, to identify and report potential illegal activities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume-section" class="resume-section">
+      <div class="container">
+        <!-- experience -->
+        <div id="experience">
+          <h2 class="section-heading"><i class='bx bxs-briefcase' ></i> Experience</h2>
+          <div class="experiences">
+            <h2>Full<span>Time</span></h2>
+            <div class="experience-detail">
+              <small>October 2023 - Present <i class='bx bx-caret-down' ></i></small>
+              <h3>Data Labeler</h3>
+              <p>EvolutionIQ <span>New York, USA</span></p>
+              <div class="experience-duties">
+                <ul>
+                  <li>Annotate large datasets of various types and formats with high accuracy and efficiency.</li>
+                  <li>Collaborate effectively with multi-disciplinary teams to achieve project objectives.</li>
+                  <li>Pays meticulous attention to detail when reviewing and analyzing data.</li>
+                  <li>Ensures quality assurance by conducting thorough evaluations and inspections.</li>
+                  <li>Manage time efficiently to meet deadlines and prioritize tasks effectively.</li>
+                  <li>Map International Classification of Diseases (ICD-10) codes from medical records.</li>
                 </ul>
               </div>
+            </div>
+            <div class="experience-detail">
+              <small>April 2018 - October 2023 <i class='bx bx-caret-down' ></i></small>
+              <h3>Full-Stack Developer / AML Data Analyst</h3>
+              <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
+              <div class="experience-duties">
+                <ul>
+                  <li>Took initiative, designed, developed and implemented software solutions resulting in 100% automation of processes. This reduced the software outsourcing cost by ~USD$350,000 annually.</li>
+                  <li>Integrated algorithms to automatically generate annual entity risk profiles of the licensees/registrants based on audits, financial impact and industry, inter-alia. Saving ~90 hours of monthly labor, allowing the reallocation of resources.</li>
+                  <li>Built data reporting infrastructure from the ground up using SQL, Excel and Web Development practices to provide real time data analysis and business Key Performance Indicators KPIs.</li>
+                  <li>Implemented an external online portal for the completion/submission of annual anti-money laundering (AML) / Counter Financing of Terrorism (CFT) / Counter Proliferation Financing (CPF) questionnaire by all licensees/registrants under the AML legislation.</li>
+                  <li>Provided AML statistical data to the Financial Action Task Force (FATF) to assist with the Jamaica National Risk Assessment (NRA) in aid of removing Jamaica from being grey-listed to white-listed.</li>
+                  <li>Standardized workflow of the Fit & Proper and Complaints processes, increasing efficiency by 80%.</li>
+                </ul>
               </div>
-        </nav>
-    </header>
-    <main class="py-5">
-        <div class="container-xl">
-            <aside class="text-center">
-                <div class="mx-auto" id="profile-div"><img src="./assets/images/opg-profile-cropped.png" alt="Profile Image" id="profile-img"></div>
-                <div class="">
-                    <h1 class="text-center">Omar P Graham</h1>
-                </div>
-                <div class="job-titles">
-                    <h3></h3>
-                </div>
-                <div class="social-media">
-                    <ul class="d-flex justify-content-center col-12 mx-auto p-0 gap-2">
-                        <li><a href="https://www.linkedin.com/in/omar-p-graham" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="https://www.github.com/omar-p-graham" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    </ul>
-                </div>
-                <div class="communication">
-                    <div class="comm">
-                        <p class="px-2 m-0"><i class="fa-solid fa-envelope"></i> <a href="mailto:omar_graham@hotmail.com">Omar_Graham@hotmail.com</a></p>
-                    </div>
-                    <div class="comm">
-                        <p class="px-2 m-0"><i class="fa-solid fa-location-dot"></i>New York, USA</p>
-                    </div>
-                    <div class="cv-button text-center col-md-4 mx-auto mt-3">
-                        <button type="button" class="form-control form-control-sm"><i class="fa-solid fa-file-arrow-down"></i> Download CV</button>
-                    </div>
-                </div>
-            </aside>
-            <section>
-                <div class="" id="about-me-section">
-                    <h1 class="section-heading"><i class="fa-solid fa-id-card"></i> About Me</h1>
-                    <p>
-                        <span class="d-block p-0 mb-2">Hi,</span>
-                        I am a Developer/Analyst who uses critical thinking, computer science, mathematical analysis, and engineering to aid in research, designing and development.</p>
-                    <h2>What I do</h2>
-                    <div class="services">
-                        <div class="service">
-                            <h3><i class="fa-solid fa-code"></i> Web Development</h3>
-                            <p>I design, develop and maintain websites and web applications.</p>
-                        </div>
-                        <div class="service">
-                            <h3><i class="fa-solid fa-chart-line"></i> Data Analytics</h3>
-                            <p>I collect, clean, transform and organize data to aid informed decision-making and predictions.</p>
-                        </div>
-                        <div class="service">
-                            <h3><i class="fa-solid fa-chart-line"></i> Anti-Money Laundering (AML)</h3>
-                            <p>I follow AML policies and procedures to detect, prevent and report financial crimes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="" id="experience-section">
-                    <h1 class="section-heading"><i class="fa-solid fa-briefcase"></i> Experience</h1>
-                    <h2>Full-Time</h2>
-                    <div class="experience-detail p-3 mb-2">
-                        <small>October 2023 - Present <i class="caret fa-solid fa-angle-down"></i></small>
-                        <h3>Data Labeler</h3>
-                        <p>EvolutionIQ <span>New York, USA</span></p>
-                        <div class="experience-duties">
-                            <ul>
-                                <li>Annotate large datasets of various types and formats with high accuracy and efficiency.</li>
-                                <li>Collaborate effectively with multi-disciplinary teams to achieve project objectives.</li>
-                                <li>Paid meticulous attention to detail when reviewing and analyzing data.</li>
-                                <li>Ensures quality assurance by conducting thorough evaluations and inspections.</li>
-                                <li>Manage time efficiently to meet deadlines and prioritize tasks effectively.</li>
-                                <li>Map International Classification of Diseases (ICD-10) codes from medical records.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience-detail p-3 mb-2">
-                        <small>April 2018 - October 2023 <i class="caret fa-solid fa-angle-down"></i></small>
-                        <h3>Full-Stack Developer / AML Data Analyst</h3>
-                        <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
-                        <div class="experience-duties">
-                            <ul>
-                                <li>Took initiative, designed, developed and implemented software solutions resulting in 100% automation of processes. This reduced the software outsourcing cost by USD$350,000 annually.</li>
-                                <li>Integrated algorithms to automatically generate annual entity risk profiles of the licensees/registrants based on audits, financial impact and industry, inter-alia. Saving ~90 hours of monthly labor, allowing the reallocation of resources.</li>
-                                <li>Built data reporting infrastructure from the ground up using SQL, Excel and Web Development practices to provide real time data analysis and business Key Performance Indicators KPIs.</li>
-                                <li>Implemented an external online portal for the completion/submission of annual anti-money laundering (AML) / Counter Financing of Terrorism (CFT) / Counter Proliferation Financing (CPF) questionnaire by all licensees/registrants under the AML legislation.</li>
-                                <li>Provided AML statistical data to the Financial Action Task Force (FATF) to assist with the Jamaica National Risk Assessment (NRA) in aid of removing Jamaica from being grey-listed to white-listed.</li>
-                                <li>Standardized workflow of the Fit & Proper and Complaints processes, increasing efficiency by 80%.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience-detail p-3 mb-2">
-                        <small>January 2017 - March 2018 <i class="caret fa-solid fa-angle-down"></i></small>
-                        <h3>Systems Analyst</h3>
-                        <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
-                        <div class="experience-duties">
-                            <ul>
-                                <li>Provided exceptional user support to resolve technical issues and ensure smooth operation of software systems.</li>
-                                <li>Troubleshot technical issues efficiently to minimize downtime and maintain high levels of customer satisfaction.</li>
-                                <li>Led the designing/modeling of database for in-depth data analysis to inform strategic decision-making.</li>
-                                <li>Implemented seamless system integration to enhance overall operational efficiency and workflow.</li>
-                                <li>Automated manual entity forms, increasing efficiency by approximately 30%.</li>
-                                <li>Redesigned the intranet and ensured the corporate website met security standards.</li>
-                                <li>Provided training to staff on software applications.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h2>Freelance</h2>
-                    <div class="experience-detail p-3 mb-2">
-                        <small>May 2024 - June 2024 <i class="caret fa-solid fa-angle-down"></i></small>
-                        <h3>Web Developer</h3>
-                        <p>K&H Group of Companies <span>Wisconsin, USA</span></p>
-                        <div class="experience-duties">
-                            <ul>
-                                <li>Developed the corporate website</li>
-                                <li>Business Intelligence consultancy</li>
-                                <li>Converted all company forms to fillable PDF documents</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience-detail p-3 mb-2">
-                        <small>June 2020 - August 2020 <i class="caret fa-solid fa-angle-down"></i></small>
-                        <h3>Web Developer</h3>
-                        <p>Tuskin Financial Limited <span>Kingston, Jamaica W.I.</span></p>
-                        <div class="experience-duties">
-                            <ul>
-                                <li>Developed the corporate website and client portal for online loan applications, using WordPress, HTML, CSS, JavaScript, PHP and SEO best practices to ensure optimal user experience.</li>
-                                <li>Managed databases efficiently to ensure data integrity and optimized system performance.</li>
-                                <li>Performed technical troubleshooting to identify and resolve software and hardware issues promptly.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="" id="education-section">
-                    <h1 class="section-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h1>
-                    <div class="education-detail p-3 mb-2">
-                        <small>2015</small>
-                        <h3>Bachelor of Science in Management Information Systems</h3>
-                        <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
-                    </div>
-                    <div class="education-detail p-3 mb-2">
-                        <small>2008</small>
-                        <h3>Associate of Science in Management Information Systems</h3>
-                        <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
-                    </div>
-                </div>
-                <div class="" id="skills-section">
-                    <h1 class="section-heading"><i class="fa-solid fa-award"></i> Skills</h1>
-                    <div class="my-2 p-0 skills">
-                        <h5>Web Development</h5>
-                        <div class="skillset pt-2 pb-4" id="skill-web-dev"></div>
-                    </div>
-                    <div class="my-2 p-0 skills">
-                        <h5>Databases</h5>
-                        <div class="skillset pt-2 pb-4" id="skill-databases"></div>
-                    </div>
-                    <div class="my-2 p-0 skills">
-                        <h5>Package Managers</h5>
-                        <div class="skillset pt-2 pb-4" id="skill-packages"></div>
-                    </div>
-                    <div class="my-2 p-0 skills">
-                        <h5>CI/CD</h5>
-                        <div class="skillset pt-2 pb-4" id="skill-cicd"></div>
-                    </div>
-                    <div class="my-2 p-0 skills">
-                        <h5>Data Analysis</h5>
-                        <div class="skillset pt-2 pb-4" id="skill-analysis"></div>
-                    </div>
-                </div>
-                <div class="" id="projects-section">
-                    <h1 class="section-heading"><i class="fa-solid fa-list-check"></i> Projects</h1>
-                    <div class="categories">
-                        <span>All</span> | <span>Web Design</span>
-                    </div>
-                </div>
-                <div class="" id="contact">
-                    <h1 class="section-heading"><i class="fa-solid fa-address-book"></i> Contact</h1>
-                    <p>Get in touch with me anytime</p>
-                    <form action="" class="col-11 mx-auto">
-                        <div class="row">
-                            <div class="mb-2 col-md-6">
-                                <label for="contact-name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="contact-name" placeholder="Please enter your name">
-                            </div>
-                            <div class="mb-2 col-md-6">
-                                <label for="contact-email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="contact-email" placeholder="name@example.com">
-                            </div>
-                            <div class="mb-2">
-                                <label for="contact-subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="contact-subject" placeholder="What's the topic of this communication?">
-                            </div>
-                            <div class="mb-2">
-                                <label for="contact-details" class="form-label">Details</label>
-                                <textarea type="text" class="form-control" id="contact-details" placeholder="Please provide details"></textarea>
-                            </div>
-                            <div class="col-12 col-md-4 mx-auto text-center">
-                                <button type="button" class="form-control form-control-sm btn-light">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <nav></nav>
+            </div>
+            <div class="experience-detail">
+              <small>January 2017 - March 2018 <i class='bx bx-caret-down' ></i></small>
+              <h3>Systems Analyst</h3>
+              <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
+              <div class="experience-duties">
+                <ul>
+                  <li>Provided exceptional user support to resolve technical issues and ensure smooth operation of software systems.</li>
+                  <li>Troubleshot technical issues efficiently to minimize downtime and maintain high levels of customer satisfaction.</li>
+                  <li>Led the designing/modeling of database for in-depth data analysis to inform strategic decision-making.</li>
+                  <li>Implemented seamless system integration to enhance overall operational efficiency and workflow.</li>
+                  <li>Automated manual entity forms, increasing efficiency by approximately 30%.</li>
+                  <li>Redesigned the intranet and ensured the corporate website met security standards.</li>
+                  <li>Provided training to staff on software applications.</li>
+                </ul>
+              </div>
+            </div>
+            <h2>Free<span>lance</span></h2>
+            <div class="experience-detail">
+              <small>May 2024 - June 2024 <i class='bx bx-caret-down' ></i></small>
+              <h3>Web Developer</h3>
+              <p>K&H Group of Companies <span>Wisconsin, USA</span></p>
+              <div class="experience-duties">
+                <ul>
+                  <li>Developed the corporate website</li>
+                  <li>Business Intelligence consultancy</li>
+                  <li>Converted all company forms to fillable PDF documents</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-detail">
+              <small>June 2020 - August 2020 <i class='bx bx-caret-down' ></i></small>
+              <h3>Web Developer</h3>
+              <p>Tuskin Financial Limited <span>Kingston, Jamaica W.I.</span></p>
+              <div class="experience-duties">
+                <ul>
+                  <li>Developed the corporate website and client portal for online loan applications, using WordPress, HTML, CSS, JavaScript, PHP and SEO best practices to ensure optimal user experience.</li>
+                  <li>Managed databases efficiently to ensure data integrity and optimized system performance.</li>
+                  <li>Performed technical troubleshooting to identify and resolve software and hardware issues promptly.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-    <footer></footer>
+        <!-- skills -->
+        <div id="skills">
+          <h2 class="section-heading"><i class='bx bxs-award' ></i> Skills</h2>
+          <div class="skills">
+            <div class="skill">
+              <h5>Web Development</h5>
+              <div class="skillset" id="skill-web-dev"></div>
+            </div>
+            <div class="skill">
+              <h5>Databases</h5>
+              <div class="skillset" id="skill-databases"></div>
+            </div>
+            <div class="skill">
+              <h5>Package Managers</h5>
+              <div class="skillset" id="skill-packages"></div>
+            </div>
+            <div class="skill">
+              <h5>CI/CD</h5>
+              <div class="skillset" id="skill-cicd"></div>
+            </div>
+            <div class="skill">
+              <h5>Data Analysis</h5>
+              <div class="skillset" id="skill-analysis"></div>
+            </div>
+          </div>
+        </div>
+        <!-- education -->
+        <div id="education">
+          <h2 class="section-heading"><i class='bx bxs-graduation' ></i> Education</h2>
+          <div class="education">
+            <div class="education-detail">
+              <small>2015</small>
+              <h3>Bachelor of Science in Management Information Systems</h3>
+              <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
+            </div>
+            <div class="education-detail">
+              <small>2008</small>
+              <h3>Associate of Science in Management Information Systems</h3>
+              <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- download -->
+         <div class="cv">
+          <button type="button">Download CV</button>
+         </div>
+      </div>
+    </section>
 
-    <script src="./plugins/bootstrap-5.3.3/js/bootstrap.min.js"></script>
-    <script src="./plugins/fontawesome-6.5.2/js/all.min.js"></script>
-    <script src="./plugins/isotope-3.0.6/isotope-3.0.6.min.js"></script>
-    <script src="./js/javascript.js"></script>
-    <script src="./js/skills.js"></script>
+    <!-- Projects -->
+    <section id="projects-section" class="projects-section">
+      <div class="container">
+        <h5 class="section-heading"><i class='bx bx-task'></i> My Work</h5>
+        <div class="projects">
+          <!-- project summary -->
+          <div class="project-info">
+            <div class="project-summary active">
+              <h2 class="section-sub-heading">Project Title 1</h2>
+              <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, magnam labore? Harum id odit vero ipsam pariatur impedit deserunt ut molestiae unde voluptatem saepe et, at ullam dicta quos aut?</p>
+              <div class="project-tech">
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="project-links">
+                <a href="#"><i class='bx bx-link-external'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+              </div>
+            </div>
+            <div class="project-summary">
+              <h2 class="section-sub-heading">Project Title 2</h2>
+              <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, magnam labore? Harum id odit vero ipsam pariatur impedit deserunt ut molestiae unde voluptatem saepe et, at ullam dicta quos aut?</p>
+              <div class="project-tech">
+                <p>HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="project-summary">
+              <h2 class="section-sub-heading">Project Title 3</h2>
+              <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, magnam labore? Harum id odit vero ipsam pariatur impedit deserunt ut molestiae unde voluptatem saepe et, at ullam dicta quos aut?</p>
+              <div class="project-tech">
+                <p>HTML, CSS, JS</p>
+              </div>
+              <div class="project-links">
+                <a href="#"><i class='bx bxl-github'></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- project selection -->
+          <div class="project-selection">
+            <div class="project-images">
+              <div class="project-image">
+                <img src="./assets/projects/kandhgroup.webp" alt="">
+              </div>
+              <div class="project-image">
+                <img src="./assets/projects/tuskinfinancial.webp" alt="">
+              </div>
+              <div class="project-image">
+                <img src="./assets/projects/outlaunderx.webp" alt="">
+              </div>
+            </div>
+            <div class="controllers">
+              <i class='bx bxs-left-arrow-circle left-arrow disabled'></i>
+              <i class='bx bxs-right-arrow-circle right-arrow'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-section" class="contact-section">
+      <div class="container">
+        <h5 class="section-heading"><i class='bx bxs-contact' ></i> Contact</h5>
+        <p>Send me an email at <a href="mailto:omar_p_graham@outlook.com">omar_p_graham@outlook.com</a></p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <small>© <script>document.write(new Date().getFullYear())</script> <span>Omar P. Graham</span>. All Rights Reserved.</small>
+    </div>
+  </footer>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/skills.js"></script>
+  <script src="./js/projects.js"></script>
 </body>
 </html>
