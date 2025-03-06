@@ -6,6 +6,13 @@ $(function() {
         $('nav').toggleClass('open');
     });
 
+    $('nav li').click(function(){
+        if($('nav').hasClass('open')){
+            $('.menu-icon i').toggleClass('bx-menu bx-x');
+            $('nav').toggleClass('open');
+        }
+    });
+
     //Greeting
     let time_of_day = 'Morning';
     const time = new Date().getHours();
@@ -20,9 +27,41 @@ $(function() {
     };
     $('.overview h5').html(`Good ${time_of_day},`);
 
+    // Typewriter [Job Titles]
+    function typewriter(index, text){
+        let textIndex = 1;
+
+        let tmp = setInterval(function() {
+            if(textIndex < text[index].length + 1){
+                $('.job-titles').text(text[index].substr(0, textIndex));
+                textIndex++;
+            }else{
+                setTimeout(function(){deleting(index,text)}, 1000);
+                clearInterval(tmp);
+            }
+        }, 100);
+    };
+
+    function deleting(index, text){
+        let textIndex = text[index].length;
+
+        let tmp = setInterval(function(){
+            if(textIndex + 1 > 0){
+                $('.job-titles').text(text[index].substr(0, textIndex));
+                textIndex--;
+            }else{
+                index++;
+                if(index == text.length){index = 0;}
+                typewriter(index,text);
+                clearInterval(tmp);
+            }
+        }, 50);
+    };
+    typewriter(0, $('.job-titles').data('jobs').split(','));
+
     //Experience
     $('.experience-detail').click(function(){
         $(this).find('i').toggleClass('bx-caret-down bx-caret-up');
-        $(this).find('.experience-duties').toggleClass('open');
+        $(this).toggleClass('open');
     });
 });

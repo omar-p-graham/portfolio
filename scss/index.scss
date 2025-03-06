@@ -120,7 +120,7 @@ main{
                     color: $primary;
                 }
             }
-            h3{
+            h3.job-titles{
                 font-size: fm.calcRem(20);
                 text-transform: uppercase;
                 border-top: .5px solid $primary;
@@ -274,6 +274,7 @@ main{
             border-radius: fm.calcRem(10);
             margin-top: fm.calcRem(10);
             overflow: hidden;
+            transition: all .5s;
 
             small{
                 display: flex;
@@ -298,14 +299,9 @@ main{
             .experience-duties{
                 overflow: hidden;
                 height: 0;
-                // width: 0;
+                opacity: 0;
+                border: none;
                 transition: all .5s;
-
-                &.open{
-                    padding: fm.calcRem(20) 0;
-                    height: 100%;
-                    // width: 100%;
-                }
 
                 ul{
                     padding-inline: 15px;
@@ -318,6 +314,16 @@ main{
                     }
                 }
             }
+
+            &.open{
+                border: 1px solid $primary;
+
+                .experience-duties{
+                    padding: fm.calcRem(20) 0;
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -325,47 +331,65 @@ main{
     #skills{
         padding: fm.calcRem(14);
 
-        .skill{
-            padding: fm.calcRem(20) fm.calcRem(15);
+        .skills{
+            background-color: lighten($background, 4);
+            border-radius: fm.calcRem(10);
+            
+            .skill{
+                padding: fm.calcRem(20) fm.calcRem(15);
 
-            h5{
-                margin: 10px 0;
-            }
+                h5{
+                    margin: 10px 0;
+                }
 
-            .skillset{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, 50px);
-                gap: 15px;
+                .skillset{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, 45px);
+                    gap: 15px;
 
-                figure{
-                    width: 100%;
+                    figure{
+                        position: relative;
+                        width: 100%;
 
-                    img{
-                        max-width: 100%;
-                        max-height: 100%;
-                        display: block;
-                        filter: grayscale(100%);
-                        -moz-filter: grayscale(100%);
-                        -ms-filter: grayscale(100%);
-                        -o-filter: grayscale(100%);
-                        filter: gray; /* IE6-9 */
-                        -webkit-filter: grayscale(100%);
-                    }
-                    figcaption{
-                        display: none;
-                    }
-
-                    &:hover{
                         img{
-                            filter: grayscale(0%);
-                            -moz-filter: grayscale(0%);
-                            -ms-filter: grayscale(0%);
-                            -o-filter: grayscale(0%);
-                            filter: none; /* IE6-9 */
-                            -webkit-filter: grayscale(0%);
+                            max-width: 100%;
+                            max-height: 100%;
+                            display: block;
+                            filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
+                            -moz-filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
+                            -ms-filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
+                            -o-filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
+                            filter: gray; /* IE6-9 */
+                            -webkit-filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
                         }
                         figcaption{
-                            display: block;
+                            position: absolute;
+                            bottom: -30px;
+                            left: -15px;
+                            right: -15px;
+                            text-align: center;
+                            font-size: 12px;
+                            padding: 2px 3px;
+                            background-color: $text;
+                            color: $background;
+                            border-radius: 4px;
+                            box-shadow: 0 0 1px $background;
+                            z-index: 10;
+                            display: none;
+                        }
+
+                        &:hover{
+                            img{
+                                filter: grayscale(0%) drop-shadow(0 0 2px $background);
+                                -moz-filter: grayscale(0%) drop-shadow(0 0 2px $background);
+                                -ms-filter: grayscale(0%) drop-shadow(0 0 2px $background);
+                                -o-filter: grayscale(0%) drop-shadow(0 0 2px $background);
+                                filter: none; /* IE6-9 */
+                                -webkit-filter: grayscale(0%) drop-shadow(0 0 2px $background);
+                            }
+                            figcaption{
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -442,17 +466,57 @@ main{
                     margin: 10px 0;
                 }
 
+                .project-tech{
+                    padding: fm.calcRem(10) 0;
+                    
+                    p{
+                        font-size: fm.calcRem(14);
+                        
+                        &::before{
+                            content: 'Tech Stack: ';
+                        }
+                    }
+                }
+
                 .project-links{
                     display: flex;
                     gap: 10px;
-                    padding: fm.calcRem(10) 0;
                     justify-content: start;
+                    padding: fm.calcRem(5) 0;
+                    border-top: 1px solid $sub;
+                    border-bottom: 2px solid $sub;
+                    margin-bottom: fm.calcRem(10);
 
-                    i{
-                        font-size: fm.calcRem(32);
+                    a{
+                        position: relative;
 
-                        &:hover{
-                            color: $primary;
+                        &::after {
+                            content: attr(data-title);
+                            position: absolute;
+                            bottom: -40px;
+                            left: -15px;
+                            right: -15px;
+                            text-align: center;
+                            font-size: 12px;
+                            padding: 2px 3px;
+                            background-color: $text;
+                            color: $background;
+                            border-radius: 4px;
+                            box-shadow: 0 0 1px $background;
+                            z-index: 10;
+                            display: none;
+                        }
+
+                        &:hover::after {
+                            display: block;
+                        }
+
+                        i{
+                            font-size: fm.calcRem(32);
+
+                            &:hover{
+                                color: $primary;
+                            }
                         }
                     }
                 }
@@ -492,11 +556,16 @@ main{
 
                         &:hover{
                             color: $primary;
+                            cursor: pointer;
                         }
 
                         &.disabled{
                             opacity: .5;
                             pointer-events: none;
+
+                            &:hover{
+                                color: inherit;
+                            }
                         }
                     }
                 }
@@ -526,4 +595,15 @@ footer{
     span{
         color: $primary;
     }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $primary; }
 }
