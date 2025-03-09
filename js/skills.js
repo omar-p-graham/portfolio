@@ -143,3 +143,22 @@ loadSkills("skill-databases",databases);
 loadSkills("skill-packages",packageManagers);
 loadSkills("skill-cicd",cicd);
 loadSkills("skill-analysis",data);
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) { 
+        const j = Math.floor(Math.random() * (i + 1)); 
+        [array[i], array[j]] = [array[j], array[i]]; 
+      } 
+      return array;
+}
+
+setInterval(() => {
+    let skills = shuffleArray(webDev.concat(databases,packageManagers,cicd,data).filter(item => item !== ""));
+
+    let count = 0;
+    
+    $('.skill-rain img').each(function(){
+        $(this).attr('src',`./assets/skills/${skills[count]['svg']}.svg`);
+        count++;
+    });
+}, 2500);
