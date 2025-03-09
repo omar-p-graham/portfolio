@@ -4,26 +4,28 @@
   <meta charset="UTF-8" />
   <title>Portfolio: Omar P. Graham</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta name="description" content="Portfolio of Omar P. Graham. This portfolio showcases experiences, education, skills, projects and awards." />
   <meta name="author" content="Omar P. Graham" />
   
   <link rel="icon" href="./assets/logo.svg">
   
   <meta property="og:title" content="Portfolio: Omar P. Graham" />
-  <meta property="og:description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta property="og:description" content="Portfolio of Omar P. Graham. This portfolio showcases experiences, education, skills, projects and awards." />
   <meta property="og:image" content="" />
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="" />
-  <meta name="twitter:site" content="" />
+  <meta name="twitter:site" content="https://omar-p-graham.github.io/portfolio/" />
   <meta name="twitter:title" content="Portfolio: Omar P. Graham" />
-  <meta name="twitter:description" content="Portfolio of Omar P. Graham. This portfolio showcases projects, work experience, education and skills." />
+  <meta name="twitter:description" content="Portfolio of Omar P. Graham. This portfolio showcases experiences, education, skills, projects and awards." />
   <meta name="twitter:image" content="" />
   
-  <link rel="canonical" href="https://www.mywebsite.com/page">
+  <link rel="canonical" href="https://omar-p-graham.github.io/portfolio/">
 
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="./css/magic.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 <body>
@@ -59,7 +61,7 @@
         <div class="identity">
           <picture>
             <source media="(min-width:992px)" srcset="./assets/body.webp" alt="Body Image">
-            <img src="./assets/face.webp" alt="Face Image" id="id-img">
+            <img src="./assets/face.webp" alt="Face Image" id="id-img" class="magictime puffIn">
             <div class="blobs" id="blob1">
               <img src="./assets/blob.svg" alt="Blob">
             </div>
@@ -96,7 +98,7 @@
     <section id="about-section" class="about-section">
       <div class="container">
         <h2 class="section-heading"><i class='bx bxs-id-card' ></i> About Me</h2>
-        <div id="about-details">
+        <div id="about-details" data-aos="fade-up">
           <div id="about-details-personal">
             <h5>Personal Details</h5>
             <div class="detail"><a href="mailto:omar_p_graham@outlook.com"><span>Email:</span> omar_p_graham@outlook.com</a></div>
@@ -111,17 +113,17 @@
         <div id="about-services">
           <h3 class="section-sub-heading">What I Do</h3>
           <div class="services">
-            <div class="service">
+            <div class="service" data-aos="zoom-in">
               <i class='bx bx-code-alt' ></i>
               <h5>Web Development</h5>
               <p>Create and maintain websites and web applications. Design layouts, ensuring functionality, and optimize performance to provide a seamless user experience. Collaborate with designers, content creators, and other stakeholders to bring visually appealing, user friendly, and responsive websites/web applications to life.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in">
               <i class='bx bx-line-chart' ></i>
               <h5>Data Analytics</h5>
               <p>Collects, clean, processes, and perform statistical analyses on large datasets to identify trends, patterns, and insights. Help to make informed decisions by providing data-driven insights that can improve strategies, optimize operations, and identify opportunities for growth.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in">
               <i class='bx bx-money-withdraw' ></i>
               <h5>Anti-Money Laundering Analysis</h5>
               <p>Detect and prevent financial crimes, such as money laundering and terrorist financing; by analyzing financial transactions, monitor suspicious activities, and ensure compliance with regulatory requirements. Use various data analysis, risk assessment, and investigative tools and techniques, to identify and report potential illegal activities.</p>
@@ -141,7 +143,7 @@
             <div class="experiences">
               <div class="experience-type">
                 <h3>FullTime</h3>
-                <div class="experience-detail">
+                <div class="experience-detail" data-aos="zoom-in">
                   <small>October 2023 - Present <i class='bx bx-caret-down' ></i></small>
                   <h3>Data Labeler</h3>
                   <p>EvolutionIQ <span>New York, USA</span></p>
@@ -157,7 +159,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="experience-detail">
+                <div class="experience-detail" data-aos="zoom-in">
                   <small>April 2018 - October 2023 <i class='bx bx-caret-down' ></i></small>
                   <h3>Full-Stack Developer / AML Data Analyst</h3>
                   <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
@@ -172,7 +174,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="experience-detail">
+                <div class="experience-detail" data-aos="zoom-in">
                   <small>January 2017 - March 2018 <i class='bx bx-caret-down' ></i></small>
                   <h3>Systems Analyst</h3>
                   <p>Financial Services Commission <span>Kingston, Jamaica W.I.</span></p>
@@ -191,7 +193,7 @@
               </div>
               <div class="experience-type">
                 <h3>Freelance</h3>
-                <div class="experience-detail">
+                <div class="experience-detail" data-aos="zoom-in">
                   <small>May 2024 - June 2024 <i class='bx bx-caret-down' ></i></small>
                   <h3>Web Developer</h3>
                   <p>K&H Group of Companies <span>Wisconsin, USA</span></p>
@@ -203,7 +205,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="experience-detail">
+                <div class="experience-detail" data-aos="zoom-in">
                   <small>June 2020 - August 2020 <i class='bx bx-caret-down' ></i></small>
                   <h3>Web Developer</h3>
                   <p>Tuskin Financial Limited <span>Kingston, Jamaica W.I.</span></p>
@@ -248,12 +250,12 @@
           <div id="education">
             <h2 class="section-heading"><i class='bx bxs-graduation'></i> Education</h2>
             <div class="education">
-              <div class="education-detail">
+              <div class="education-detail" data-aos="zoom-in">
                 <small>2015</small>
                 <h3>Bachelor of Science in Management Information Systems</h3>
                 <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
               </div>
-              <div class="education-detail">
+              <div class="education-detail" data-aos="zoom-in">
                 <small>2008</small>
                 <h3>Associate of Science in Management Information Systems</h3>
                 <p>Excelsior Community College <span>Kingston, Jamaica W.I.</span></p>
@@ -296,9 +298,9 @@
         <h5 class="section-heading"><i class='bx bx-task'></i> My Work</h5>
         <div class="projects">
           <!-- project summary -->
-          <div class="project-info"><!--auto loaded--></div>
+          <div class="project-info" data-aos="fade-up"><!--auto loaded--></div>
           <!-- project selection -->
-          <div class="project-selection">
+          <div class="project-selection" data-aos="fade-up">
             <div class="project-images"><!--auto loaded--></div>
             <div class="controllers">
               <i class='bx bxs-left-arrow-circle left-arrow disabled'></i>
@@ -322,7 +324,13 @@
       <small>© <script>document.write(new Date().getFullYear())</script> <span>Omar P. Graham</span>. All Rights Reserved.</small>
     </div>
   </footer>
+
+  <div id="to-top">
+    <i class='bx bxs-chevrons-up'></i>
+  </div>
+
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/skills.js"></script>
   <script src="./js/projects.js"></script>

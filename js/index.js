@@ -1,4 +1,6 @@
 $(function() {
+    AOS.init(); //Initialize AOS animation library
+
     //Nav Menu
     $('.menu-icon i').addClass('bx bx-menu');
     $('.menu-icon i').click(function(){
@@ -64,4 +66,31 @@ $(function() {
         $(this).find('i').toggleClass('bx-caret-down bx-caret-up');
         $(this).toggleClass('open');
     });
+
+    $('#to-top').click(function(){
+        $(window).scrollTop(0);
+    });
+
+    $(window).scroll(function() {
+        let elementTop = $('#resume-section').offset().top;
+        let windowBottom = $(window).scrollTop() + $(window).height();
+        
+        if (elementTop < windowBottom) {
+            $('#to-top').css('display','block');
+        }else{
+            $('#to-top').css('display','none');
+        }
+    });
+
+    $(window).resize(function(){
+        if($(window).width() < 992){
+            $('.project-info').attr('data-aos', 'fade-up');
+            $('.project-selection').attr('data-aos', 'fade-up');
+        }else{
+            $('.project-info').attr('data-aos', 'fade-right');
+            $('.project-selection').attr('data-aos', 'fade-left');
+        }
+    });
+
+    $(window).resize();
 });

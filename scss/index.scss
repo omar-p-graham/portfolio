@@ -134,8 +134,8 @@ main{
             flex-direction: column-reverse;
             justify-content: center;
             gap: fm.calcRem(40);
-            max-height: calc(100vh - 3.75rem);
-            max-height: calc(100dvh - 3.75rem);
+            height: 100vh;
+            height: 100dvh;
         }
 
         .overview{
@@ -179,7 +179,7 @@ main{
 
         .identity{
             width: 70vw;
-            height: 100%;
+            height: auto;
             margin: 0 auto;
 
             picture{
@@ -211,6 +211,8 @@ main{
                 gap: 0;
                 width: 100%;
                 height: 100%;
+                max-height: calc(100vh - 3.75rem);
+                max-height: calc(100dvh - 3.75rem);
                 overflow: hidden;
                 position: relative;
             }
@@ -344,7 +346,7 @@ main{
             }
 
             #about-details-personal{
-                @extend #about-section;
+                background-color: lighten($background,3);
                 border-radius: fm.calcRem(5);
                 padding: fm.calcRem(18);
                 width: 100%;

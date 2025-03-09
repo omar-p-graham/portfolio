@@ -2,29 +2,50 @@
 @use 'functions_mixins' as fm;
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto Flex", serif;
-    // font-family: "Parkinsans", serif;
-    font-size: 16px;
-    list-style-type: none;
-    text-decoration: none;
-    font-weight: 400;
-    scroll-behavior: smooth;
-}
-
 // Colors
 $primary: #FF570A;
 $background: #1C2021;
 $text: #CCCCCC;
 $sub: #555C5E;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", serif;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    /*scrollbar-width: thin;
+    scrollbar-color: #FF570A #555C5E;*/
+}
+
 body{
     background-color: $background;
     color: $text;
     scrollbar-width: thin;
+    overflow-x: hidden;
+
+    #to-top{
+        position: fixed;
+        bottom: 10px;
+        right: 15px;
+        color: $primary;
+        z-index: 100;
+        border: 1px solid $sub;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 0px 21px 4px rgba(0,0,0,.3);
+        box-shadow: 0px 0px 21px 4px rgba(0,0,0,.3);
+        cursor: pointer;
+        display: none;
+        clear: both;
+
+        i{
+            font-size: fm.calcRem(32);
+        }
+    }
 }
 
 a,a:active,a:visited{
@@ -39,11 +60,6 @@ $breakpoints: ( //0.9375
     "xxl": 1400
 );
 
-.container{
-    margin: 0 auto;
-    padding: fm.calcRem(30) fm.calcRem(10);
-}
-
 @each $key,$val in $breakpoints{
     @media (min-width: #{$val}px){
         .container{
@@ -51,3 +67,40 @@ $breakpoints: ( //0.9375
         }
     }
 }
+
+.container{
+    margin: 0 auto;
+    padding: fm.calcRem(30) fm.calcRem(10);
+}
+
+// Scrollbar Customization
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: lighten($background,3);
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: $sub;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: lighten($background,3);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $primary;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: lighten($primary,3);
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: lighten($primary,3);
+  }
+  
