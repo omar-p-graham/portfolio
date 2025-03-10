@@ -42,6 +42,7 @@ header{
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,.3);
     position: relative;
     height: fm.calcRem(60);
+    z-index: 20;
 
     a{
         width: fm.calcRem(60);
@@ -324,6 +325,32 @@ main{
                     z-index: -20;
                     animation: skill-rain 7s linear infinite;
                 }
+            }
+        }
+
+        @media only screen and (max-width: fm.calcRem(991)) and (orientation: landscape) {
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: fm.calcRem(40) 0 fm.calcRem(20);
+                gap: fm.calcRem(40);
+                width: 100%;
+                height: 100%;
+                max-height: calc(100vh - 3.75rem);
+                max-height: calc(100dvh - 3.75rem);
+                overflow: hidden;
+                position: relative;
+            }
+            .overview{
+                width: 100%;
+            }
+            .identity{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
             }
         }
     }
