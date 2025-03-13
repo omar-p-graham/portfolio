@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 // Colors
-$primary: #FF570A;
+$primary: #EEBA0B;
 $background: #1C2021;
 $text: #CCCCCC;
 $sub: #555C5E;
@@ -18,8 +18,6 @@ $sub: #555C5E;
     text-decoration: none;
     font-weight: 400;
     scroll-behavior: smooth;
-    /*scrollbar-width: thin;
-    scrollbar-color: #FF570A #555C5E;*/
 }
 
 body{
@@ -52,7 +50,7 @@ a,a:active,a:visited{
     color: $text;
 }
 
-$breakpoints: ( //0.9375
+$breakpoints: (
     "sm": 576,
     "md": 768,
     "lg": 992,

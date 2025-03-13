@@ -105,10 +105,10 @@ $(function(){
             let links = "";
 
             if(data.links.external != ""){ //External link to project site/app
-                links += `<a href="${data.links.external}" target="_blank" data-title="To external link"><i class='bx bx-link-external'></i></a>`;
+                links += `<a href="${data.links.external}" target="_blank" data-title="To external link">View <i class='bx bx-link-external'></i></a>`;
             }
             if(data.links.github != ""){ //External link to Github Repository
-                links += `<a href="${data.links.github}" target="_blank" data-title="To Github Repository"><i class='bx bxl-github'></i></a>`;
+                links += `<a href="${data.links.github}" target="_blank" data-title="To Github Repository">Repository <i class='bx bxl-github'></i></a>`;
             }
             $(`<div class="project-links">${links}</div>`).appendTo(`.project-summary:eq(${index})`);
         }

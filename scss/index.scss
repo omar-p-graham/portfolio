@@ -25,6 +25,7 @@
 
     i{
         font-size: fm.calcRem(22);
+        color: $primary;
     }
 
     @media(min-width: fm.calcRem(992)) {
@@ -475,7 +476,7 @@ main{
         #experience{
             padding: fm.calcRem(14);
 
-            h3{
+            h3:not(.experience-detail h3){
                 margin: 10px 0;
                 font-size: fm.calcRem(18);
                 text-decoration: underline;
@@ -488,6 +489,7 @@ main{
                 margin-top: fm.calcRem(10);
                 overflow: hidden;
                 transition: all .5s;
+                cursor: pointer;
 
                 small{
                     display: flex;
@@ -522,6 +524,10 @@ main{
                         li{
                             &::marker{
                                 content: '\2726\0020';
+                                color: $primary;
+                            }
+
+                            &:hover{
                                 color: $primary;
                             }
                         }
@@ -775,6 +781,17 @@ main{
 
                     a{
                         position: relative;
+                        display: inline-flex;
+                        align-items: center;
+                        margin-right: fm.calcRem(10);
+
+                        &:hover{
+                            color: $primary;
+
+                            i{
+                                color: $primary;
+                            }
+                        }
 
                         &::after {
                             content: attr(data-title);
@@ -799,10 +816,6 @@ main{
 
                         i{
                             font-size: fm.calcRem(32);
-
-                            &:hover{
-                                color: $primary;
-                            }
                         }
                     }
                 }
@@ -919,10 +932,10 @@ footer{
 
 @keyframes blobs-animation {
     from, to{
-        transform: scale(.5) /*rotate(0)*/;
+        transform: scale(.5);
     }
     50%{
-        transform: scale(1) /*rotate(45deg)*/;
+        transform: scale(1);
     }
 }
 
