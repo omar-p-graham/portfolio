@@ -563,7 +563,7 @@ main{
 
                     .skillset{
                         display: grid;
-                        grid-template-columns: repeat(auto-fit, 40px);
+                        grid-template-columns: repeat(auto-fit, 35px);
                         gap: 15px;
 
                         figure{
@@ -612,29 +612,55 @@ main{
         #education{
             padding: fm.calcRem(14);
 
-            .education-detail{
+            .education{
                 background-color: lighten($background, 3);
                 padding: fm.calcRem(20) fm.calcRem(15);
                 border-radius: fm.calcRem(10);
-                margin-top: fm.calcRem(10);
 
-                small{
-                    font-size: fm.calcRem(14);
+                h3:not(.education-detail h3){
+                    margin: 10px 0;
+                    font-size: fm.calcRem(18);
+                    text-decoration: underline;
                 }
 
-                h3{
-                    margin: fm.calcRem(5) 0;
-                    font-weight: 500;
-                    color: $primary;
-                }
+                .education-type{
 
-                p{
-                    @extend small;
-                    display: flex;
-                    justify-content: space-between;
+                    .education-detail{
+                        &::after{
+                            content: "";
+                            display: block;
+                            margin: fm.calcRem(15) auto;
+                            width: 100%;
+                            border-bottom: 1px black solid;
+                        }
 
-                    span{
-                        font-size: fm.calcRem(14);
+                        small{
+                            font-size: fm.calcRem(14);
+                        }
+
+                        h3{
+                            margin: fm.calcRem(5) 0;
+                            font-weight: 500;
+                            color: $primary;
+                        }
+
+                        p{
+                            @extend small;
+                            display: flex;
+                            justify-content: space-between;
+
+                            span{
+                                font-size: fm.calcRem(14);
+                            }
+
+                            a{
+                                @extend span;
+
+                                &:hover{
+                                    color: $primary;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -650,7 +676,7 @@ main{
                 padding: fm.calcRem(20) fm.calcRem(15);
 
                 .award-type{
-                    margin-bottom: 10px;
+                    margin-bottom: fm.calcRem(10);
                     
                     h3{
                         @extend .award-type;
@@ -694,11 +720,13 @@ main{
 
             #skills{
                 grid-column: span 2;
-                grid-row: span 2;
+                grid-row: span 1;
 
                 .skills{
                     .skill{
                         .skillset{
+                            grid-template-columns: repeat(auto-fit, 40px);
+
                             figure{
                                 img{
                                     filter: grayscale(100%) drop-shadow(0 0 0.5rem $sub);
@@ -726,8 +754,22 @@ main{
             }
 
             #education{
-                grid-column: span 2;
+                grid-column: span 4;
                 grid-row: span 1;
+
+                .education{
+                    .education-type{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: fm.calcRem(25);
+
+                        .education-detail{
+                            &::after{
+                                border-bottom: 2px black solid;
+                            }
+                        }
+                    }
+                }
             }
 
             #awards{
