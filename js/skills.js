@@ -118,6 +118,22 @@ const data = [
     {
         "title": "Tableau",
         "svg": "tableau"
+    },
+    {
+        "title": "Python",
+        "svg": "python"
+    },
+    {
+        "title": "Pandas",
+        "svg": "pandas"
+    },
+    {
+        "title": "MatPlotLib",
+        "svg": "matplotlib"
+    },
+    {
+        "title": "Numpy",
+        "svg": "numpy"
     }
 ];
 
