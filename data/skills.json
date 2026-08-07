@@ -1,0 +1,33 @@
+[
+  {
+    "id": "skill-data",
+    "skills": [
+      { "skill": "Excel", "svg": "excel" },
+      { "skill": "Power BI", "svg": "powerbi" },
+      { "skill": "Tableau", "svg": "tableau" },
+      { "skill": "Pandas", "svg": "pandas" },
+      { "skill": "MatPlotLib", "svg": "matplotlib" },
+      { "skill": "Numpy", "svg": "numpy" }
+    ]
+  },
+  {
+    "id": "skill-database",
+    "skills": [
+      { "skill": "MySQL", "svg": "mysql" },
+      { "skill": "PostgresSQL", "svg": "postgressql" },
+      { "skill": "MS SQL Server", "svg": "mssqlserver" },
+      { "skill": "Mongo DB", "svg": "mongodb" }
+    ]
+  },
+  {
+    "id": "skill-web",
+    "skills": [
+      { "skill": "HTML5", "svg": "html5" },
+      { "skill": "CSS3", "svg": "css3" },
+      { "skill": "JavaScript", "svg": "javascript" },
+      { "skill": "Vue.js", "svg": "vuejs" },
+      { "skill": "PHP", "svg": "php" },
+      { "skill": "Laravel", "svg": "laravel" }
+    ]
+  }
+]

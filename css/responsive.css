@@ -1,0 +1,75 @@
+@import url("style.css");
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px) {
+  .hero,
+  .about-container,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-image img {
+    border-radius: 50%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    opacity: 0;
+    width: 0%;
+    transition: var(--transition);
+  }
+
+  .nav-links.open {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--secondary);
+  }
+
+  .nav-links.open li {
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  .nav-links.open li:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

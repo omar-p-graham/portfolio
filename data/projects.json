@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "K&H Group",
+    "category": "web",
+    "image": "kandhgroup.webp",
+    "description": "An assisted living company, offering personalized care of the highest quality and a comfortable, family-like, environment. They provide a range of services to meet the unique needs of each resident.",
+    "technology": ["PHP", "SQL", "HTML5", "CSS", "JavaScript", "Bootstrap"],
+    "github": "",
+    "demo": "https://www.kandhgroup.org"
+  },
+  {
+    "id": 2,
+    "title": "Tuskin Financial Limited",
+    "category": "web",
+    "image": "tuskinfinancial.webp",
+    "description": "A customer driven, friendly and flexible Micro-Financing company, guaranteeing competitive market rates. They offer personal and payroll loans, targeted products for micro, small and medium sized enterprises (SMEs) and the transportation sector.",
+    "technology": ["PHP", "SQL", "WordPress", "JavaScript", "CSS"],
+    "github": "",
+    "demo": "https://tuskinholdings.com/"
+  },
+  {
+    "id": 3,
+    "title": "outLaunderX",
+    "category": "web",
+    "image": "outlaunderx.webp",
+    "description": "A comprehensive anti-money laundering (AML) and Counter Financing of Terrorism (CFT) solution, providing executive level data analysis tailored to meet the unique needs of financial insitutions and regulated entities worldwide.",
+    "technology": ["PHP", "SQL", "HTML5", "JavaScript", "CSS", "Bootstrap"],
+    "github": "",
+    "demo": ""
+  },
+  {
+    "id": 4,
+    "title": "AML Knowledge Assessment",
+    "category": "web",
+    "image": "knowledge-assessment.webp",
+    "description": "This application facilitates exam covering the basic requirements and obligations of regulated entities under POCA, TPA and UNSCRIA within Jamaica. The questions focus on key areas of the legislation to ascertain if the employees of the regulated entities have basic knowledge of the requirements of applicable legislation.",
+    "technology": ["PHP", "SQL", "HTML5", "JavaScript", "CSS", "Bootstrap"],
+    "github": "",
+    "demo": "https://aml.fscjamaica.org/knowledge-assessment/"
+  },
+  {
+    "id": 5,
+    "title": "Flex E-Store",
+    "category": "web",
+    "image": "flexestore.webp",
+    "description": "An easy way to purchase a wide variety products online. With a modern, responsive and dynamic design, this E-commerce application provides excellent shopping experience.",
+    "technology": [
+      "Laravel",
+      "Livewire",
+      "SQL",
+      "HTML5",
+      "JavaScript",
+      "Alpine.js",
+      "CSS",
+      "Tailwind"
+    ],
+    "github": "https://github.com/omar-p-graham/ecommerce_laravel",
+    "demo": ""
+  },
+  {
+    "id": 6,
+    "title": "Flex Recipe Hub",
+    "category": "web",
+    "image": "recipehub.webp",
+    "description": "A culinary voyage with meals from around the world. From the spicy jerk chicken of Jamaica to the sophisticated pastries of France, the ultimate online portal for discovering and mastering international cuisine.",
+    "technology": ["Vue.js", "HTML5", "JavaScript", "CSS", "Tailwind"],
+    "github": "https://github.com/omar-p-graham/flex_recipe_app",
+    "demo": "https://flex-recipe-app.vercel.app/"
+  },
+  {
+    "id": 7,
+    "title": "Flex News",
+    "category": "web",
+    "image": "flexnews.webp",
+    "description": "Flex News provides daily news articles at your finger tips on topics like Entertainment, Sports, Science, Technology, among others.",
+    "technology": ["Vue.js", "HTML5", "JavaScript", "CSS", "Tailwind"],
+    "github": "https://github.com/omar-p-graham/Flex-News",
+    "demo": "https://flexnews-api.netlify.app/"
+  }
+]
